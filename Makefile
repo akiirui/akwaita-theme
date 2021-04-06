@@ -6,8 +6,8 @@ build:
 
 install:
 	echo "Install Akwaita Theme"
-	mkdir -p /usr/share/themes/
-	cp -r Akwaita /usr/share/themes/
+	mkdir -p $(DESTDIR)/usr/share/themes/
+	cp -r Akwaita $(DESTDIR)/usr/share/themes/
 
 clean:
 	rm Akwaita/gnome-shell/gnome-shell.css
