@@ -8,4 +8,8 @@ $custom_panel_font_size: 0.9em;
   background-color: $custom_panel_bg;
   font-size: $custom_panel_font_size;
   height: $custom_panel_height;
+
+  .panel-corner {
+    -panel-corner-radius: 0;
+  }
 }
