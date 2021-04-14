@@ -2205,3 +2205,5 @@ StScrollBar {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 0.9em;
   height: 2em; }
+  #panel .panel-corner {
+    -panel-corner-radius: 0; }
