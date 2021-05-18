@@ -3,11 +3,22 @@
 $custom_panel_bg: transparentize(black, 0.8);
 $custom_panel_height: 2em;
 $custom_panel_font_size: 0.9em;
+$custom_panel_text_color: white;
 
 #panel {
   background-color: $custom_panel_bg;
   font-size: $custom_panel_font_size;
   height: $custom_panel_height;
+
+  .panel-button {
+    color: $custom_panel_text_color;
+    &:active,
+    &:focus,
+    &:overview,
+    &:checked {
+      color: $custom_panel_text_color;
+    }
+  }
 
   .panel-corner {
     -panel-corner-radius: 0;
