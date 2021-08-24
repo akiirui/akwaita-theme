@@ -2,7 +2,7 @@
 
 A simple theme base on gnome-shell [Adwaita][theme-upstream] theme.
 
-[theme-upstream]: https://gitlab.gnome.org/GNOME/gnome-shell/-/tree/master/data/theme/gnome-shell-sass
+[theme-upstream]: https://gitlab.gnome.org/GNOME/gnome-shell/-/tree/main/data/theme/gnome-shell-sass
 
 ## Note
 
