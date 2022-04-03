@@ -1,6 +1,9 @@
 SCSS=sassc
 
 build:
+	echo "Patch hardcode font-size value"
+	sed -i "s/base_font_size: 11/base_font_size: 10/"	src/gnome-shell/data/theme/gnome-shell-sass/_common.scss
+
 	echo "Generating Akwaita Theme"
 	$(SCSS) src/Akwaita.scss > Akwaita/gnome-shell/gnome-shell.css
 
