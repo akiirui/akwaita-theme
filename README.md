@@ -17,8 +17,7 @@ Requirement: `sassc`
 ```bash
 $ git clone https://github.com/akiirui/akwaita-theme.git
 $ cd akwaita-theme
-$ git submodule update --init
-$ make install
+$ make install GNOME=<VERSION>
 ```
 
 ### Package
