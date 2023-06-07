@@ -22,6 +22,6 @@ $ make install GNOME=<VERSION>
 
 ### Package
 
-- Arch Linux: [akwaita-theme-git][aur]
+- Arch Linux: [akwaita-theme-git][aur] This package follows the `extra/gnome-shell` update.
 
 [aur]: https://aur.archlinux.org/packages/akwaita-theme-git/
