@@ -6,7 +6,7 @@ build: checkout
 	git submodule foreach git restore data
 
 checkout:
-	git submodule update --init
+	git submodule update --init --remote
 ifdef GNOME
 	cd src/gnome-shell/; git checkout $(GNOME);
 	git add src/gnome-shell/
