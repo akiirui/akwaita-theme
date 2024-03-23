@@ -1,0 +1,9 @@
+$variant: "dark";
+$contrast: "high";
+
+@import "gnome-shell/data/theme/gnome-shell-sass/_high-contrast-colors";
+@import "gnome-shell/data/theme/gnome-shell-sass/_drawing";
+@import "gnome-shell/data/theme/gnome-shell-sass/_common";
+@import "gnome-shell/data/theme/gnome-shell-sass/_widgets";
+
+@import "customize/_customize";

@@ -1,8 +1,13 @@
 SCSS=sassc
+THEME_CONTRACT=Akwaita-Contrast
+THEME_DARK=Akwaita-Dark
+THEME_LIGHT=Akwaita-Light
 
 build: checkout
-	sed -i "s/base_font_size: 11/base_font_size: 10/" src/gnome-shell/data/theme/gnome-shell-sass/_common.scss
-	$(SCSS) src/Akwaita.scss > Akwaita/gnome-shell/gnome-shell.css
+
+	$(SCSS) src/$(THEME_CONTRACT).scss > $(THEME_CONTRACT)/gnome-shell/gnome-shell.css
+	$(SCSS) src/$(THEME_DARK).scss > $(THEME_DARK)/gnome-shell/gnome-shell.css
+	$(SCSS) src/$(THEME_LIGHT).scss > $(THEME_LIGHT)/gnome-shell/gnome-shell.css
 	git submodule foreach git restore data
 
 checkout:
@@ -14,12 +19,18 @@ ifdef GNOME
 endif
 
 package:
-	mkdir -p $(DESTDIR)/usr/share/themes/
-	cp -r Akwaita $(DESTDIR)/usr/share/themes/
+	install -dm755 $(DESTDIR)/usr/share/themes/
+	cp -r $(THEME_CONTRACT) $(DESTDIR)/usr/share/themes/
+	cp -r $(THEME_DARK) $(DESTDIR)/usr/share/themes/
+	cp -r $(THEME_LIGHT) $(DESTDIR)/usr/share/themes/
 
 install: build
-	mkdir -p ~/.local/share/themes/
-	cp -r Akwaita ~/.local/share/themes
+	install -dm755 ~/.local/share/themes/
+	cp -r $(THEME_CONTRACT) ~/.local/share/themes/
+	cp -r $(THEME_DARK) ~/.local/share/themes/
+	cp -r $(THEME_LIGHT) ~/.local/share/themes/
 
 clean:
-	rm Akwaita/gnome-shell/gnome-shell.css
+	rm $(THEME_CONTRACT)/gnome-shell/gnome-shell.css
+	rm $(THEME_DARK)/gnome-shell/gnome-shell.css
+	rm $(THEME_LIGHT)/gnome-shell/gnome-shell.css
