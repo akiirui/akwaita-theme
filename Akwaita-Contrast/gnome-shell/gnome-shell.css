@@ -447,11 +447,11 @@ StEntry {
   font-weight: 400;
   font-size: 0.818em; }
 
-.calendar .calendar-week-number, .calendar .calendar-day-heading, .calendar .calendar-day {
+.weather-button .weather-box .weather-grid .weather-forecast-time, .calendar .calendar-week-number, .calendar .calendar-day-heading, .calendar .calendar-day {
   font-weight: 400;
-  font-size: 0.727em; }
+  font-size: 0.818em; }
 
-.unlock-dialog-clock .unlock-dialog-clock-time, #panel, .weather-button .weather-box .weather-grid .weather-forecast-temp, .weather-button .weather-box .weather-grid .weather-forecast-time, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .world-clocks-button .world-clocks-grid .world-clocks-time, .events-button .events-box .events-list .event-box .event-time, .calendar .calendar-day-heading, .calendar .calendar-day {
+.unlock-dialog-clock .unlock-dialog-clock-time, #panel, .weather-button .weather-box .weather-grid .weather-forecast-temp, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .world-clocks-button .world-clocks-grid .world-clocks-time, .events-button .events-box .events-list .event-box .event-time, .calendar .calendar-day-heading, .calendar .calendar-day {
   font-feature-settings: "tnum"; }
 
 /* OSD Elements */
@@ -820,12 +820,7 @@ StEntry {
 
 .icon-dropshadow {
   icon-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  icon-shadow: none;
-  background-color: #000000;
-  padding: 12px;
-  border-radius: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  margin: 18px; }
+  icon-shadow: none; }
 
 /* Entries */
 StEntry StIcon.capslock-warning {
@@ -1204,9 +1199,8 @@ StScrollBar {
     spacing-rows: 6px;
     spacing-columns: 12px; }
     .weather-button .weather-box .weather-grid .weather-forecast-time {
-      font-size: 0.909em;
-      padding-top: 0.2em;
-      padding-bottom: 0.4em; }
+      padding-top: 6px;
+      padding-bottom: 6px; }
     .weather-button .weather-box .weather-grid .weather-forecast-icon {
       icon-size: 2.182em;
       margin-bottom: 4px; }
@@ -1315,16 +1309,15 @@ StScrollBar {
     margin-top: 0;
     spacing: 6px; }
     .message .message-box .message-icon {
-      icon-size: 48px;
-      -st-icon-style: symbolic; }
+      icon-size: 48px; }
       .message .message-box .message-icon:ltr {
         margin-right: 6px; }
       .message .message-box .message-icon:rtl {
         margin-left: 6px; }
       .message .message-box .message-icon.message-themed-icon {
         border-radius: 999px;
-        background-color: rgba(255, 255, 255, 0.2);
-        icon-size: 16px;
+        background-color: rgba(255, 255, 255, 0.07);
+        icon-size: 1.091em;
         min-width: 48px;
         min-height: 48px; }
     .message .message-box:first-child {
@@ -1687,13 +1680,13 @@ StScrollBar {
 
 .ws-switcher-indicator {
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 4px;
-  margin: 20px;
-  border-radius: 48px; }
+  padding: 2.6666666667px;
+  margin: 13.3333333333px;
+  border-radius: 32px; }
   .ws-switcher-indicator:active {
     background-color: #ffffff;
-    padding: 8px;
-    margin: 16px; }
+    padding: 5.3333333333px;
+    margin: 10.6666666667px; }
 
 .screenshot-ui-panel {
   border-radius: 32px;
@@ -2266,6 +2259,13 @@ StScrollBar {
 .window-picker {
   spacing: 6px; }
 
+.window-icon {
+  background-color: #000000;
+  padding: 12px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin: 18px; }
+
 .window-close, .screenshot-ui-close-button {
   background-color: rgba(31, 31, 31, 0.98);
   color: #ffffff;
@@ -2371,8 +2371,7 @@ StScrollBar {
   color: rgba(255, 255, 255, 0.8); }
 
 .grid-search-results {
-  spacing: 30px;
-  margin: 0 12px; }
+  spacing: 30px; }
 
 .search-provider-icon:ltr {
   margin-right: 4px; }
@@ -2478,7 +2477,7 @@ StScrollBar {
       #dash .dash-item-container .grid-search-result:checked .overview-icon:active {
         background-color: #505050; }
   #dash .dash-item-container .app-grid-running-dot {
-    margin-bottom: 21px; }
+    offset-y: -13px; }
   #dash .dash-separator {
     width: 1px;
     margin-left: 4px;
@@ -2601,7 +2600,7 @@ StScrollBar {
   width: 5px;
   border-radius: 5px;
   background-color: #ffffff;
-  margin-bottom: 4px; }
+  offset-y: 6px; }
 
 .app-folder-dialog-container {
   padding-top: 2.2em; }
@@ -3210,6 +3209,10 @@ StScrollBar {
 
 .login-dialog-message {
   text-align: center; }
+
+.login-dialog-message-hint, .login-dialog-message {
+  color: #e6e6e6;
+  min-height: 2.75em; }
 
 .login-dialog-user-selection-box {
   padding-top: 4em;
