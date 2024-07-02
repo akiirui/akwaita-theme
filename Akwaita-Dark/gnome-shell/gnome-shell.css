@@ -856,35 +856,36 @@ StScrollBar {
 .popup-sub-menu {
   border-radius: 0 0 13px 13px;
   margin-bottom: 6px;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  background-color: #565656; }
   .popup-sub-menu .popup-menu-item {
     border-radius: 0;
+    border-top-width: 0;
     background-color: transparent;
     border-color: transparent;
-    box-shadow: none;
-    border-top-width: 0; }
+    box-shadow: none; }
     .popup-sub-menu .popup-menu-item:insensitive {
       background-color: transparent !important; }
     .popup-sub-menu .popup-menu-item:focus, .popup-sub-menu .popup-menu-item:hover {
       color: #ffffff;
-      background-color: #6d6d6d; }
+      background-color: #6f6f6f; }
     .popup-sub-menu .popup-menu-item:active {
       color: #ffffff;
-      background-color: #7a7a7a; }
+      background-color: #7c7c7c; }
       .popup-sub-menu .popup-menu-item:active:hover {
-        background-color: #848484; }
+        background-color: #868686; }
       .popup-sub-menu .popup-menu-item:active:focus {
-        background-color: #777a7f; }
+        background-color: #787c81; }
     .popup-sub-menu .popup-menu-item:checked {
       color: #ffffff;
-      background-color: #777777; }
+      background-color: #797979; }
       .popup-sub-menu .popup-menu-item:checked:hover {
-        background-color: #828282; }
+        background-color: #848484; }
       .popup-sub-menu .popup-menu-item:checked:active {
-        background-color: #8e8e8e; }
+        background-color: #909090; }
     .popup-sub-menu .popup-menu-item:insensitive {
       color: rgba(255, 255, 255, 0.5);
-      background-color: #5b5b5b; }
+      background-color: #5d5d5d; }
     .popup-sub-menu .popup-menu-item:last-child {
       border-radius: 0 0 12px 12px;
       border-bottom-width: 0; }
