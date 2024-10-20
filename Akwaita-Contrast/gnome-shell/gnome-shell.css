@@ -35,7 +35,7 @@ stage {
 
 .app-folder-dialog .overview-tile, .app-folder-dialog .grid-search-result, .app-folder, .overview-tile, .grid-search-result, #dash .dash-item-container .show-apps .overview-icon,
 #dash .dash-item-container .overview-tile .overview-icon,
-#dash .dash-item-container .grid-search-result .overview-icon, .list-search-result, .search-provider-icon, .switcher-list .item-box {
+#dash .dash-item-container .grid-search-result .overview-icon, .list-search-result, .search-provider-icon, .switcher-list .item-box, .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
   border-radius: 16px;
   padding: 6px;
   spacing: 6px;
@@ -399,41 +399,41 @@ StEntry {
     box-shadow: none;
     border: none; }
 
-.modal-dialog .modal-dialog-linked-button {
+.modal-dialog .modal-dialog-button-box .modal-dialog-button {
   font-weight: bold;
   padding: 12px;
   border-radius: 12px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
   color: #ffffff;
   background-color: st-mix(rgba(255, 255, 255, 0.1), #ffffff, 87%); }
-  .modal-dialog .modal-dialog-linked-button:focus {
+  .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: #ffffff;
     box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.2) !important;
     background-color: st-mix(-st-accent-color, st-mix(rgba(255, 255, 255, 0.1), #ffffff, 87%), 5%); }
-    .modal-dialog .modal-dialog-linked-button:focus:hover {
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus:hover {
       background-color: st-mix(-st-accent-color, st-mix(rgba(255, 255, 255, 0.13), #ffffff, 87%), 5%); }
-  .modal-dialog .modal-dialog-linked-button:hover {
+  .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: #ffffff;
     background-color: st-mix(rgba(255, 255, 255, 0.13), #ffffff, 87%); }
-  .modal-dialog .modal-dialog-linked-button:active {
+  .modal-dialog .modal-dialog-button-box .modal-dialog-button:active {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: #ffffff;
     background-color: st-mix(rgba(255, 255, 255, 0.16), #ffffff, 87%); }
-    .modal-dialog .modal-dialog-linked-button:active:hover {
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button:active:hover {
       background-color: rgba(255, 255, 255, 0.19); }
-    .modal-dialog .modal-dialog-linked-button:active:focus {
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button:active:focus {
       background-color: st-mix(-st-accent-color, st-mix(rgba(255, 255, 255, 0.16), #ffffff, 87%), 5%); }
-  .modal-dialog .modal-dialog-linked-button:checked {
+  .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: #ffffff;
     background-color: st-mix(st-lighten(st-mix(#ffffff, #1a1a1a, 9%), 8%), #ffffff, 87%); }
-    .modal-dialog .modal-dialog-linked-button:checked:hover {
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked:hover {
       background-color: st-lighten(st-lighten(st-mix(#ffffff, #1a1a1a, 9%), 8%), 4%); }
-    .modal-dialog .modal-dialog-linked-button:checked:active {
+    .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked:active {
       background-color: st-lighten(st-lighten(st-mix(#ffffff, #1a1a1a, 9%), 8%), 9%); }
-  .modal-dialog .modal-dialog-linked-button:insensitive {
+  .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: st-transparentize(#ffffff, 0.5);
     background-color: st-darken(st-mix(#ffffff, #1a1a1a, 9%), 3%);
@@ -465,7 +465,8 @@ StEntry {
   font-weight: 700;
   font-size: 1.364em; }
 
-.login-dialog-auth-list-label, #LookingGlassDebugFlags .lg-debug-flags-header, #LookingGlassExtensions .lg-extensions-none, .word-suggestions, .bt-menu-placeholder.popup-menu-item, .message-dialog-content .message-dialog-title.lightweight, .headline {
+.login-dialog-auth-list-label, #LookingGlassDebugFlags .lg-debug-flags-header, #LookingGlassExtensions .lg-extensions-none, .word-suggestions, .bt-menu-placeholder.popup-menu-item, .restart-message, .polkit-dialog-user-layout .polkit-dialog-user-label,
+.polkit-dialog-user-layout .polkit-dialog-user-root-label, .message-dialog-content .message-dialog-title.lightweight {
   font-weight: 700;
   font-size: 1.182em; }
 
@@ -477,9 +478,9 @@ StEntry {
   font-weight: 700;
   font-size: 0.818em; }
 
-.lg-completions-text, .caps-lock-warning-label, .background-app-item .subtitle, .quick-toggle StBoxLayout > .quick-toggle-subtitle, .screenshot-ui-type-button .icon-label-button-container, .prompt-dialog-error-label,
-.prompt-dialog-info-label,
-.prompt-dialog-null-label, .run-dialog .run-dialog-description, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .message .message-header .message-header-content .event-time, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .events-button .events-box .events-list .event-box .event-time {
+.lg-completions-text, .caps-lock-warning-label, .background-app-item .subtitle, .quick-toggle StBoxLayout > .quick-toggle-subtitle, .screenshot-ui-type-button .icon-label-button-container, .prompt-dialog .prompt-dialog-error-label,
+.prompt-dialog .prompt-dialog-info-label,
+.prompt-dialog .prompt-dialog-null-label, .run-dialog .run-dialog-description, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .message .message-header .message-header-content .event-time, .world-clocks-button .world-clocks-grid .world-clocks-timezone, .events-button .events-box .events-list .event-box .event-time {
   font-weight: 400;
   font-size: 0.818em; }
 
@@ -1345,9 +1346,9 @@ StScrollBar {
     color: #ffffff;
     padding: 0 6px; }
     .message .message-header:ltr {
-      padding-right: 4px; }
+      padding-right: 0; }
     .message .message-header:rtl {
-      padding-left: 4px; }
+      padding-left: 0; }
     .message .message-header .message-source-icon {
       icon-size: 1.091em;
       -st-icon-style: symbolic; }
@@ -1367,14 +1368,12 @@ StScrollBar {
     .message .message-header .message-expand-button,
     .message .message-header .message-close-button {
       border-radius: 999px;
-      color: #ffffff;
-      padding: 4px; }
+      color: #ffffff; }
     .message .message-header .message-expand-button {
       padding: 6px; }
-      .message .message-header .message-expand-button:ltr {
-        margin-right: 6px; }
-      .message .message-header .message-expand-button:rtl {
-        margin-left: 6px; }
+    .message .message-header .message-close-button {
+      margin: 3px;
+      padding: 4px; }
   .message .message-box {
     padding: 6px;
     margin-top: 0;
@@ -1495,30 +1494,16 @@ StScrollBar {
 .modal-dialog {
   background-color: #1a1a1a;
   border-radius: 18px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-  padding: 24px; }
+  padding: 24px;
+  spacing: 18px;
+  box-shadow: 0 12px 8px 12px rgba(0, 0, 0, 0.03); }
   .modal-dialog .modal-dialog-content-box {
-    spacing: 32px;
-    margin-top: 8px;
-    margin-bottom: 16px;
+    padding-top: 12px;
+    spacing: 18px;
     max-width: 28em; }
+  .modal-dialog .modal-dialog-button-box {
+    padding-top: 6px; }
 
-/* End Session Dialog */
-.end-session-dialog {
-  width: 24em; }
-  .end-session-dialog .end-session-dialog-battery-warning,
-  .end-session-dialog .dialog-list-title {
-    color: #f6d32d; }
-
-/* Message Dialog */
-.message-dialog-content {
-  spacing: 18px; }
-  .message-dialog-content .message-dialog-title {
-    text-align: center; }
-  .message-dialog-content .message-dialog-description {
-    text-align: center; }
-
-/* Dialog List */
 .dialog-list {
   spacing: 18px; }
   .dialog-list .dialog-list-title {
@@ -1534,47 +1519,57 @@ StScrollBar {
       .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
         color: #f2f2f2; }
 
+/* End Session Dialog */
+.end-session-dialog {
+  width: 24em; }
+  .end-session-dialog .end-session-dialog-battery-warning,
+  .end-session-dialog .dialog-list-title {
+    color: #f6d32d;
+    background-color: rgba(246, 211, 45, 0.1);
+    padding: 9px;
+    border-radius: 8px;
+    margin: 4px 0; }
+
+/* Message Dialog */
+.message-dialog-content {
+  spacing: 18px; }
+  .message-dialog-content .message-dialog-title {
+    text-align: center; }
+  .message-dialog-content .message-dialog-description {
+    text-align: center; }
+
 /* Run Dialog */
-.run-dialog .modal-dialog-content-box {
-  margin-top: 24px;
-  margin-bottom: 12px; }
-
-.run-dialog .run-dialog-entry {
-  width: 20em; }
-
-.run-dialog .run-dialog-description {
-  text-align: center;
-  color: #cccccc; }
+.run-dialog {
+  width: 24em;
+  padding-bottom: 6px; }
+  .run-dialog .run-dialog-entry {
+    padding: 12px 9px; }
+  .run-dialog .run-dialog-description {
+    color: #cccccc; }
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
   width: 28em; }
-  .prompt-dialog .modal-dialog-content-box {
-    margin-bottom: 24px; }
-
-.prompt-dialog-password-grid {
-  spacing-rows: 8px;
-  spacing-columns: 4px; }
-  .prompt-dialog-password-grid .prompt-dialog-password-entry {
-    width: auto; }
-    .prompt-dialog-password-grid .prompt-dialog-password-entry:ltr {
-      margin-left: 20px; }
-    .prompt-dialog-password-grid .prompt-dialog-password-entry:rtl {
-      margin-right: 20px; }
-
-.prompt-dialog-password-layout {
-  spacing: 8px; }
-
-.prompt-dialog-password-entry {
-  width: 20em; }
-
-.prompt-dialog-error-label,
-.prompt-dialog-info-label,
-.prompt-dialog-null-label {
-  text-align: center; }
-
-.prompt-dialog-error-label {
-  color: #f6d32d; }
+  .prompt-dialog .prompt-dialog-password-grid {
+    spacing-rows: 8px;
+    spacing-columns: 4px; }
+    .prompt-dialog .prompt-dialog-password-grid .prompt-dialog-password-entry {
+      width: auto; }
+      .prompt-dialog .prompt-dialog-password-grid .prompt-dialog-password-entry:ltr {
+        margin-left: 20px; }
+      .prompt-dialog .prompt-dialog-password-grid .prompt-dialog-password-entry:rtl {
+        margin-right: 20px; }
+  .prompt-dialog .prompt-dialog-password-layout {
+    spacing: 8px; }
+  .prompt-dialog .prompt-dialog-password-entry {
+    width: 20em;
+    padding: 12px 9px; }
+  .prompt-dialog .prompt-dialog-error-label,
+  .prompt-dialog .prompt-dialog-info-label,
+  .prompt-dialog .prompt-dialog-null-label {
+    text-align: center; }
+  .prompt-dialog .prompt-dialog-error-label {
+    color: #f6d32d; }
 
 /* Polkit Dialog */
 .polkit-dialog-user-layout {
@@ -1585,26 +1580,59 @@ StScrollBar {
     color: #f6d32d; }
 
 /* Audio selection dialog */
-.audio-device-selection-dialog .modal-dialog-content-box {
-  margin-bottom: 28px; }
-
-.audio-device-selection-dialog .audio-selection-box {
-  spacing: 20px; }
-
-.audio-selection-device {
-  border-radius: 16px; }
-  .audio-selection-device:hover, .audio-selection-device:focus {
-    background-color: #4d4d4d; }
-  .audio-selection-device:active {
-    background-color: -st-accent-color;
-    color: -st-accent-fg-color; }
-
-.audio-selection-device-box {
-  padding: 20px;
-  spacing: 20px; }
-
-.audio-selection-device-icon {
-  icon-size: 64px; }
+.audio-device-selection-dialog {
+  min-width: 24em; }
+  .audio-device-selection-dialog .audio-selection-box {
+    spacing: 12px; }
+    .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+      background-color: #000000;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+      box-shadow: none;
+      border: none; }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.2) !important;
+        background-color: st-mix(-st-accent-color, rgba(0, 0, 0, 0.25), 5%); }
+        .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus:hover {
+          background-color: st-mix(-st-accent-color, st-mix(st-lighten(#000000, 7%), #ffffff, 87%), 5%); }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        background-color: st-mix(st-lighten(#000000, 7%), #ffffff, 87%); }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active {
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        background-color: st-mix(st-lighten(#000000, 9%), #ffffff, 87%); }
+        .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active:hover {
+          background-color: st-lighten(st-lighten(#000000, 9%), 7%); }
+        .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active:focus {
+          background-color: st-mix(-st-accent-color, st-mix(st-lighten(#000000, 9%), #ffffff, 87%), 5%); }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:highlighted, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        color: #ffffff;
+        background-color: st-mix(st-lighten(#000000, 8%), #ffffff, 87%); }
+        .audio-device-selection-dialog .audio-selection-box .audio-selection-device:highlighted:hover, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected:hover, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked:hover {
+          background-color: st-lighten(st-lighten(#000000, 8%), 7%); }
+        .audio-device-selection-dialog .audio-selection-box .audio-selection-device:highlighted:active, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected:active, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked:active {
+          background-color: st-lighten(st-lighten(#000000, 8%), 9%); }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        color: st-transparentize(#ffffff, 0.5);
+        background-color: #000000;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+        box-shadow: none;
+        border: none; }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device:drop {
+        background-color: st-transparentize(-st-accent-color, 0.8);
+        box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.2); }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-box {
+        padding: 12px;
+        spacing: 12px; }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-icon {
+        icon-size: 64px; }
 
 /* Welcome dialog */
 .welcome-dialog-image {
