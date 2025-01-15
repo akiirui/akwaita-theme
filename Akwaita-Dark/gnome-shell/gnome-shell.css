@@ -1271,7 +1271,8 @@ StScrollBar {
 
 .candidate-popup-content {
   padding: 6px;
-  spacing: 6px; }
+  spacing: 6px;
+  border-radius: 12px; }
 
 .candidate-index {
   padding: 0;
