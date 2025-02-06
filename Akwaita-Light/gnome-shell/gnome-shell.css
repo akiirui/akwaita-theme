@@ -1417,7 +1417,8 @@ StScrollBar {
     spacing: 12px; }
     .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
       color: #ffffff;
-      background-color: #353535; }
+      background-color: #353535;
+      background-color: transparent; }
       .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
         color: #ffffff;
         box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.5) !important;
@@ -1532,7 +1533,8 @@ StScrollBar {
     spacing: 12px; }
   .switcher-list .item-box {
     color: #ffffff;
-    background-color: #353535; }
+    background-color: #353535;
+    background-color: transparent; }
     .switcher-list .item-box:focus {
       color: #ffffff;
       box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.5) !important;
@@ -2221,6 +2223,7 @@ StScrollBar {
 .list-search-result, .search-provider-icon {
   color: whitesmoke;
   background-color: #3d3d3d;
+  background-color: transparent;
   border-radius: 13.2px; }
   .list-search-result:focus, .search-provider-icon:focus {
     color: whitesmoke;
@@ -2380,6 +2383,7 @@ StScrollBar {
 .overview-tile, .grid-search-result {
   color: whitesmoke;
   background-color: #282828;
+  background-color: transparent;
   border-radius: 24px;
   padding: 12px; }
   .overview-tile:focus, .grid-search-result:focus {
@@ -2510,7 +2514,8 @@ StScrollBar {
         background-color: st-mix(-st-accent-color, st-lighten(#3d3d3d, 9%), 5%); }
   .app-folder-dialog .overview-tile, .app-folder-dialog .grid-search-result {
     color: whitesmoke;
-    background-color: #3d3d3d; }
+    background-color: #3d3d3d;
+    background-color: transparent; }
     .app-folder-dialog .overview-tile:focus, .app-folder-dialog .grid-search-result:focus {
       color: whitesmoke;
       box-shadow: inset 0 0 0 2px st-transparentize(-st-accent-color, 0.5) !important;
@@ -2648,12 +2653,12 @@ StScrollBar {
   background-size: contain;
   border-radius: 999px;
   icon-size: 64px;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: #ffffff; }
+  background-color: rgba(40, 40, 40, 0.05);
+  color: #282828; }
   .user-icon StIcon {
     padding: 12px; }
   .user-icon.user-avatar {
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+    box-shadow: inset 0 0 0 1px rgba(40, 40, 40, 0.1); }
 
 .lightbox {
   background-color: black; }
