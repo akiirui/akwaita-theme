@@ -1107,7 +1107,7 @@ StScrollBar {
     color: #78787b; }
 
 .events-button .events-box .events-title {
-  color: #78787b;
+  color: #6b6b6e;
   padding-bottom: 6px; }
 
 .events-button .events-box .events-list {
@@ -1116,13 +1116,13 @@ StScrollBar {
     spacing: 6px;
     border-radius: 8px; }
     .events-button .events-box .events-list .event-box .event-time {
-      color: #78787b; }
+      color: #6b6b6e; }
   .events-button .events-box .events-list .event-placeholder {
-    color: #78787b;
+    color: #6b6b6e;
     font-style: italic; }
 
 .world-clocks-button .world-clocks-header {
-  color: #78787b; }
+  color: #6b6b6e; }
   .world-clocks-button .world-clocks-header.no-world-clocks {
     color: #222226; }
 
@@ -1136,14 +1136,14 @@ StScrollBar {
     .world-clocks-button .world-clocks-grid .world-clocks-time:rtl {
       text-align: left; }
   .world-clocks-button .world-clocks-grid .world-clocks-timezone {
-    color: #78787b; }
+    color: #6b6b6e; }
 
 .weather-button .weather-box {
   spacing: 6px; }
   .weather-button .weather-box .weather-header-box {
     spacing: 6px; }
     .weather-button .weather-box .weather-header-box .weather-header {
-      color: #78787b; }
+      color: #6b6b6e; }
       .weather-button .weather-box .weather-header-box .weather-header.no-location {
         color: #222226; }
       .weather-button .weather-box .weather-header-box .weather-header.location {
@@ -1228,7 +1228,7 @@ StScrollBar {
     border-color: #e6e6e6; }
   .message .message-header {
     spacing: 6px;
-    color: #78787b;
+    color: #6b6b6e;
     padding: 0 6px; }
     .message .message-header:ltr {
       padding-right: 0; }
@@ -1244,7 +1244,7 @@ StScrollBar {
       .message .message-header .message-header-content .message-source-title {
         font-weight: bold; }
       .message .message-header .message-header-content .event-time {
-        color: #78787b;
+        color: #6b6b6e;
         padding-bottom: 0.068em; }
         .message .message-header .message-header-content .event-time:ltr {
           text-align: right; }
