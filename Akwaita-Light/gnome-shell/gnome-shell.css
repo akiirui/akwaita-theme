@@ -2163,7 +2163,7 @@ StScrollBar {
 
 .quick-toggle-menu {
   border-radius: 24px;
-  margin: 12px 18px 0; }
+  margin: 12px 0 0; }
   .quick-toggle-menu:insensitive {
     color: #222226;
     background-color: st-mix(#222226, #fafafb, 12%); }
