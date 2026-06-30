@@ -3593,7 +3593,7 @@ StScrollBar {
 .unlock-dialog-notifications-container {
   margin: 12px;
   spacing: 6px;
-  width: 25em;
+  width: 29em;
   background-color: transparent; }
   .unlock-dialog-notifications-container .summary-notification-stack-scrollview {
     padding-top: 0;
