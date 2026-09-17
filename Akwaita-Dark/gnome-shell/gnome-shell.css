@@ -590,6 +590,7 @@ StEntry {
   .unlock-dialog .login-dialog-button.login-dialog-session-list-button:focus, .unlock-dialog .login-dialog-auth-list-item:focus {
     color: #fafafb;
     box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.2) !important;
+    box-shadow: inset 0 0 0 2px st-transparentize(rgba(250, 250, 251, 0.4), 0.2) !important;
     background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), rgba(250, 250, 251, 0.1), 5%); }
     .unlock-dialog-notifications-container .message StButton:focus:hover,
     .unlock-dialog-notifications-container .unlock-dialog-notification-source StButton:focus:hover, .parental-controls-shield .parental-controls-shield-button:focus:hover, .unlock-dialog .button:focus:hover,

@@ -719,6 +719,7 @@ StEntry {
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
     color: #ffffff;
     box-shadow: inset 0 0 0 2px st-transparentize(st-mix(-st-accent-color, #ffffff, 60%), 0.1) !important;
+    box-shadow: inset 0 0 0 2px st-transparentize(rgba(255, 255, 255, 0.7), 0.1) !important;
     background-color: st-mix(st-mix(-st-accent-color, #ffffff, 60%), st-mix(rgba(255, 255, 255, 0.1), #ffffff, 87%), 5%); }
     .unlock-dialog-notifications-container .message StButton:focus:hover,
     .unlock-dialog-notifications-container .unlock-dialog-notification-source StButton:focus:hover, .parental-controls-shield .parental-controls-shield-button:focus:hover, .unlock-dialog .button:focus:hover,
